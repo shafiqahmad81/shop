@@ -102,6 +102,10 @@
   @apply blur-xs lg:blur-none
 }
 
+.dropdown:hover .dropdown-menu {
+  @apply block
+}
+
 body{
   @apply font-Satoshi text-primary
 }

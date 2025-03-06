@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop | Home</title>
+  <title>Shop | Product</title>
   <link rel="stylesheet" href="src/style.css">
 </head>
 
@@ -29,7 +29,7 @@
         <a href="#" class=" w-6 md:hidden">
           <img src="src/icon/hambarger-icon.png" alt="menu icon">
         </a>
-        <a href="#" class="text-2xl md:text-3.2xl md:leading-10 font-Integral -mt-2">SHOP.CO</a>
+        <a href="index.html" class="text-2xl md:text-3.2xl md:leading-10 font-Integral -mt-2">SHOP.CO</a>
         <!-- Menu -->
 
         <nav class="hidden md:flex space-x-8">
@@ -103,64 +103,30 @@
     </div>
   </header>
 
-  <!-- Banner Section -->
-  <section class="bg-[#F2F0F1] ">
-    <div class="container md:pr-0">
-      <div class="flex flex-col md:flex-row items-end xl:items-center">
-        <div class="md:w-1/2 py-10 xl:py-0">
-          <h1 class=" md:mt-0 mb-6">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-          <p class="text-gray-600 mb-8 max-w-[34.063rem]">Browse through our diverse range of meticulously crafted
-            garments, designed to
-            bring out your individuality and cater to your sense of style.</p>
-          <a href="product.html">
-            <button class="bg-black text-white btn w-full md:w-[210px]">Shop Now</button>
-          </a>
-          <div class="mt-12 flex items-center justify-center md:justify-start flex-wrap gap-8">
-            <div class="w-[106px] md:w-[141px]">
-              <p class="count">200+</p>
-              <p class="text-xs md:text-base -mt-4 md:-mt-1">International Brands</p>
-            </div>
-            <div class="w-[117px] md:w-[156px]">
-              <p class="count">2,000+</p>
-              <p class="text-xs md:text-base -mt-4 md:-mt-1">High-Quality Products</p>
-            </div>
-            <div class="w-[103px] md:w-[171px]">
-              <p class="count">30,000+</p>
-              <p class="text-xs md:text-base -mt-4 md:-mt-1">Happy Customers</p>
-            </div>
-          </div>
-        </div>
-        <div class="md:w-1/2">
-          <img src="src/image/banar-logo.jpg" alt="Banner Image" class="w-full">
-        </div>
+  <section class="container">
+    <div class="border-t border-primary/10">
+      <div class="flex items-center gap-3">
+        <li class="flex items-center gap-2">Home <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12"
+            fill="none">
+            <path fill="#000" fill-opacity=".6"
+              d="m1.53.47 5 5a.75.75 0 0 1 0 1.062l-5 5a.751.751 0 0 1-1.062-1.063L4.938 6 .468 1.53A.751.751 0 1 1 1.53.469V.47Z" />
+          </svg></li>
+        <li class="flex items-center gap-2">Shop <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12"
+            fill="none">
+            <path fill="#000" fill-opacity=".6"
+              d="m1.53.47 5 5a.75.75 0 0 1 0 1.062l-5 5a.751.751 0 0 1-1.062-1.063L4.938 6 .468 1.53A.751.751 0 1 1 1.53.469V.47Z" />
+          </svg></li>
+        <li class="flex items-center gap-2">Men <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12"
+            fill="none">
+            <path fill="#000" fill-opacity=".6"
+              d="m1.53.47 5 5a.75.75 0 0 1 0 1.062l-5 5a.751.751 0 0 1-1.062-1.063L4.938 6 .468 1.53A.751.751 0 1 1 1.53.469V.47Z" />
+          </svg></li>
+        <li class="">T-shirts</li>
       </div>
     </div>
   </section>
 
-  <!-- Brand Section -->
-  <section class="py-10 md:py-11 bg-primary">
-    <div class="container">
-      <div class="flex items-center justify-center lg:justify-between  gap-8">
-        <div class="max-w-full">
-          <img src="src/icon/brand-1.svg" alt="brand">
-        </div>
-        <div class="max-w-full">
-          <img src="src/icon/brand-2.svg" alt="brand">
-        </div>
-        <div class="max-w-full">
-          <img src="src/icon/brand-3.svg" alt="brand">
-        </div>
-        <div class="max-w-full">
-          <img src="src/icon/brand-4.svg" alt="brand">
-        </div>
-        <div class="max-w-full">
-          <img src="src/icon/brand-5.svg" alt="brand">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- New Arrivals Section -->
+  <!-- You might also like -->
 
   <section class="container ">
     <div class="pt-10 md:pt-17 pb-10 md:pb-16 border-b border-primary/10">
@@ -264,329 +230,6 @@
     </div>
   </section>
 
-  <!-- top selling -->
-
-  <section class="container pt-10 md:pt-17 pb-10 md:pb-16">
-    <h2 class="mb-8 text-center">top selling</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center gap-6 mt-8 md:mt-14">
-      <!-- Card 1 -->
-      <div class="w-full">
-        <div class="flex justify-center p-7 bg-forbackground-gray rounded-2.5xl">
-          <img src="src/image/top-1.png" alt="T-Shirt" class="h-[244px]">
-        </div>
-        <div class="py-4 space-y-2 flex flex-col items-center sm:items-start">
-          <h5 class="">Vertical Striped Shirt</h5>
-          <div class="flex items-center">
-            <div class="flex items-center gap-1.5">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-            </div>
-            <p class="ml-3 text-sm">5.0/<span class="opacity-60">5</span></p>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <h4>$212</h4>
-            <h4 class="opacity-40 line-through">$232</h4>
-            <button class="offfer-btn">-20%</button>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="w-full">
-        <div class="flex justify-center p-7 bg-forbackground-gray rounded-2.5xl">
-          <img src="src/image/top-2.png" alt="T-Shirt" class=" h-[244px]">
-        </div>
-        <div class="py-4 space-y-2 flex flex-col items-center sm:items-start">
-          <h5 class="">Courage Graphic T-shirt</h5>
-          <div class="flex items-center">
-            <div class="flex items-center gap-1.5">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-            </div>
-            <p class="ml-3 text-sm">4.0/<span class="opacity-60">5</span></p>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <h4>$145</h4>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="w-full">
-        <div class="flex justify-center p-7 bg-forbackground-gray rounded-2.5xl">
-          <img src="src/image/top-3.png" alt="T-Shirt" class="h-[244px]">
-        </div>
-        <div class="py-4 space-y-2 flex flex-col items-center sm:items-start">
-          <h5 class="">Loose Fit Bermuda Shorts</h5>
-          <div class="flex items-center">
-            <div class="flex items-center gap-1.5">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-            </div>
-            <p class="ml-3 text-sm">3.0/<span class="opacity-60">5</span></p>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <h4>$80</h4>
-          </div>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="w-full">
-        <div class="flex justify-center p-7 bg-forbackground-gray rounded-2.5xl">
-          <img src="src/image/top-4.png" alt="T-Shirt" class="h-[244px]">
-        </div>
-        <div class="py-4 space-y-2 flex flex-col items-center sm:items-start">
-          <h5 class="">Faded Skinny Jeans</h5>
-          <div class="flex items-center">
-            <div class="flex items-center gap-1.5">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
-              <img class="h-4 md:h-5" src="src/icon/star-2.png" alt="star icon">
-            </div>
-            <p class="ml-3 text-sm">4.5/<span class="opacity-60">5</span></p>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <h4>$230</h4>
-          </div>
-        </div>
-      </div>
-      <!-- Repeat for other cards -->
-    </div>
-    <div class="flex justify-center mt-6">
-      <button class="btn w-full sm:w-[218px] border border-primary/10 ">View All</button>
-    </div>
-  </section>
-
-  <!-- Browse by Dress Style Section -->
-  <section class="container ">
-    <div
-      class=" pb-7 lg:pb-20 pt-10 lg:pt-17 px-2 md:px-8 lg:px-16 bg-forbackground-secondary rounded-2.5xl lg:rounded-[40px]">
-      <h2 class="text-center mb-7 sm:mb-16">BROWSE BY DRESS STYLE</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-4 sm:gap-6 ">
-        <!-- Card 1 -->
-        <div class="col-span-1 rounded-2.5xl bg-white overflow-hidden relative">
-          <img class="h-[190px] lg:h-[289px] w-full" src="src/image/catagory-1.jpg" alt="catagory">
-          <h3 class="absolute top-6 left-9">Casual</h3>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-span-2 rounded-2.5xl bg-white overflow-hidden relative">
-          <img class="h-[190px] lg:h-[289px] w-full" src="src/image/catagory-2.jpg" alt="catagory">
-          <h3 class="absolute top-6 left-9">Formal</h3>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-span-2 rounded-2.5xl bg-white overflow-hidden relative">
-          <img class="h-[190px] lg:h-[289px] w-full" src="src/image/catagory-3.jpg" alt="catagory">
-          <h3 class="absolute top-6 left-9">Party</h3>
-        </div>
-        <!-- Card 4 -->
-        <div class="col-span-1 rounded-2.5xl bg-white overflow-hidden relative">
-          <img class="h-[190px] lg:h-[289px] w-full" src="src/image/catagory-4.jpg" alt="catagory">
-          <h3 class="absolute top-6 left-9">Gym</h3>
-        </div>
-        <!-- Repeat for other cards -->
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Our Happy Customers Section -->
-  <section class="py-12 bg-white overflow-hidden">
-    <div class="container">
-
-      <div class="swiper mySwiper">
-        <h2 class="text-3xl font-bold mb-8">OUR HAPPY CUSTOMERS</h2>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7  backdrop-blur-xs">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-prev">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-          </svg>
-        </div>
-        <div class="swiper-button-next">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-          </svg>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- Latest Offer Section -->
 
