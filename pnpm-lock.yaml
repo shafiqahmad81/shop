@@ -11,6 +11,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.9
         version: 4.0.9(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
+      swiper:
+        specifier: ^11.2.5
+        version: 11.2.5
       tailwindcss:
         specifier: ^4.0.9
         version: 4.0.9
@@ -458,6 +461,10 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
+  swiper@11.2.5:
+    resolution: {integrity: sha512-nG0kbIyBfeE2BPFt9nPUX03qUBF75o6+enzjIT/DfCmbh8ORlwhc4eZz1+4H/yseAgb3H+OoEYzmb64i0tYNnQ==}
+    engines: {node: '>= 4.7.0'}
+
   tailwindcss@4.0.9:
     resolution: {integrity: sha512-12laZu+fv1ONDRoNR9ipTOpUD7RN9essRVkX36sjxuRUInpN7hIiHN4lBd/SIFjbISvnXzp8h/hXzmU8SQQYhw==}
 
@@ -825,6 +832,8 @@ snapshots:
       fsevents: 2.3.3
 
   source-map-js@1.2.1: {}
+
+  swiper@11.2.5: {}
 
   tailwindcss@4.0.9: {}
 

@@ -1,1 +1,161 @@
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/src/font/IntegralCF-Bold.eot');
+  src: local('/src/font/Integral CF Bold'), local('/src/font/IntegralCF-Bold'),
+      url('/src/font/IntegralCF-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/src/font/IntegralCF-Bold.woff2') format('woff2'),
+      url('/src/font/IntegralCF-Bold.woff') format('woff'),
+      url('/src/font/IntegralCF-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/src/font/Satoshi-Regular.woff2') format('woff2'),
+       url('/src/font/Satoshi-Regular.woff') format('woff'),
+       url('/src/font/Satoshi-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/src/font/Satoshi-Medium.woff2') format('woff2'),
+       url('/src/font/Satoshi-Medium.woff') format('woff'),
+       url('/src/font/Satoshi-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/src/font/Satoshi-Bold.woff2') format('woff2'),
+       url('/src/font/Satoshi-Bold.woff') format('woff'),
+       url('/src/font/Satoshi-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
 @import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
+@theme{
+
+  /* fonts */
+  --font-Integral: "Integral CF", "sans-serif";
+  --font-Satoshi: "Satoshi";
+
+  /* brakpoint */
+  --breakpoint-1xl: 90rem;    /* 1440px */
+
+  /* colors */
+  --color-primary: #000000;
+  --color-secondary: #FF3333;
+  --color-forbackground-primary: #FFFFFF;
+  --color-forbackground-secondary: #F0F0F0;
+  --color-forbackground-gray: #F0EEED;
+  --color-forbackground-success: #01AB31;
+
+  /* font size */
+  --text-3.2xl: 2rem;      /* 32px */
+
+  /* spacing */
+  --spacing-5.5: 1.375rem;   /* 22px */
+  --spacing-17: 4.5rem;   /* 72px */
+
+  /* border radius */
+  --radius-2.5xl: 1.25rem;   /* 20px */
+
+
+
+}
+
+
+
+
+ .swiper{
+  @apply overflow-visible
+ }
+ .swiper-button-prev{
+  @apply right-10 left-auto
+}
+
+.swiper-button-prev, .swiper-button-next{
+  @apply top-8 text-primary
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  @apply content-['']
+}
+.swiper-button-prev svg, .swiper-button-next svg{
+  @apply w-5
+}
+.swiper-slide:not(.swiper-slide-active, .swiper-slide-next, .swiper-slide-next+.swiper-slide){
+  @apply lg:blur-xs
+}
+.swiper-slide:not(.swiper-slide-active, .swiper-slide-next){
+  @apply blur-xs lg:blur-none
+}
+
+body{
+  @apply font-Satoshi text-primary
+}
+
+@layer base{
+  h1{
+    @apply text-4xl md:text-5xl xl:text-[4rem] leading-9 md:leading-16 font-Integral 
+  }
+  h2{
+    @apply text-3.2xl md:text-5xl font-Integral leading-9 md:leading-14
+  } 
+  h3{
+    @apply text-2xl md:text-4xl font-bold md:leading-12
+  }
+  h4{
+    @apply text-xl md:text-2xl md:leading-8 font-bold
+  }
+  h5{
+    @apply text-base md:text-xl md:leading-7 font-bold
+  }
+  h6{
+    @apply text-sm md:text-base leading-[18px] tracking-[3px] font-medium uppercase
+  }
+  p{
+    @apply text-sm md:text-base text-primary/60 font-normal leading-5 md:leading-5.5
+  }
+  button{
+    @apply cursor-pointer
+  } 
+ 
+}
+
+@layer components{
+  .btn{
+    @apply px-5 py-3 rounded-full text-base leading-5.5
+  }
+  .offfer-btn{
+    @apply px-3.5 py-1.5 text-secondary bg-secondary/10 rounded-full text-xs font-medium
+  }
+  .count{
+    @apply text-2xl md:text-[2.5rem] font-bold leading-14 text-primary
+  }
+  .social-logo{
+    @apply w-7 h-7 bg-white border border-primary/20 rounded-full flex items-center justify-center hover:bg-primary
+  }
+  .footer-link{
+    @apply text-sm md:text-base text-primary/60 font-normal leading-5
+  }
+}
+
+@utility container{ 
+  @apply mx-auto px-4;
+  @media (width >= 90rem /* 1440px */) {
+        max-width: var(--breakpoint-1xl) /* 1440px */;
+        padding-inline: 6.25rem  /* 64px */; 
+    }
+}
