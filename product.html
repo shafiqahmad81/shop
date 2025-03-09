@@ -128,52 +128,239 @@
 
   <section class="container">
     <div class="border-t border-primary/10">
+      <!-- title link -->
       <div class="flex items-center gap-3 mt-6">
-        <li class="flex items-center gap-2">Home <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12"
-            fill="none">
-            <path fill="#000" fill-opacity=".6"
+        <li class="flex items-center gap-2 text-primary/60">
+          <a href="#">
+            Home
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none">
+            <path fill="currentColor"
               d="m1.53.47 5 5a.75.75 0 0 1 0 1.062l-5 5a.751.751 0 0 1-1.062-1.063L4.938 6 .468 1.53A.751.751 0 1 1 1.53.469V.47Z" />
-          </svg></li>
-        <li class="flex items-center gap-2">Shop <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12"
-            fill="none">
-            <path fill="#000" fill-opacity=".6"
+          </svg>
+        </li>
+        <li class="flex items-center gap-2 text-primary/60">
+          <a href="#">
+            Shop
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none" class=" fill-primary/60">
+            <path fill="currentColor"
               d="m1.53.47 5 5a.75.75 0 0 1 0 1.062l-5 5a.751.751 0 0 1-1.062-1.063L4.938 6 .468 1.53A.751.751 0 1 1 1.53.469V.47Z" />
-          </svg></li>
-        <li class="flex items-center gap-2">Men <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12"
-            fill="none">
-            <path fill="#000" fill-opacity=".6"
+          </svg>
+        </li>
+        <li class="flex items-center gap-2 text-primary/60">
+          <a href="#">
+            Men
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none" class=" fill-primary/60">
+            <path fill="currentColor"
               d="m1.53.47 5 5a.75.75 0 0 1 0 1.062l-5 5a.751.751 0 0 1-1.062-1.063L4.938 6 .468 1.53A.751.751 0 1 1 1.53.469V.47Z" />
-          </svg></li>
+          </svg>
+        </li>
         <li class="inline">T-shirts</li>
+      </div>
+      <div class="flex flex-col lg:flex-row mt-9">
+        <div class="w-full lg:w-[49.193%] flex flex-col sm:flex-row justify-between">
+          <div class="w-full sm:w-[24.919%] flex flex-row sm:flex-col gap-3 sm:gap-3.5 order-2 sm:order-1 mt-3 sm:mt-0">
+            <button
+              class="bg-forbackground-gray px-2 md:px-4 md:py-6 rounded-2.5xl border border-forbackground-gray hover:border hover:border-primary">
+              <img src="src/image/t-shirt-1.png" alt="T-shirt">
+            </button>
+            <button
+              class="bg-forbackground-gray px-2 md:px-4 md:py-6 rounded-2.5xl border border-forbackground-gray hover:border hover:border-primary">
+              <img src="src/image/t-shirt-2.png" alt="T-shirt">
+            </button>
+            <button
+              class="bg-forbackground-gray rounded-2.5xl border border-forbackground-gray hover:border hover:border-primary">
+              <img src="src/image/t-shirt-3.png" alt="T-shirt">
+            </button>
+          </div>
+          <div class="w-full sm:w-[calc(100%-24.919%)] sm:pl-[2.295%] order-1 sm:order-2">
+            <div class="w-full bg-forbackground-gray px-8 py-10 rounded-2.5xl flex items-center min-h-full">
+              <img class="w-full" src="src/image/t-shirt-4.png" alt="T-shirt">
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-[calc(100%-49.193%)] lg:pl-10 mt-5 lg:mt-0">
+          <h2 class="text-2xl md:text-3xl xl:text-[2.5rem] sm:whitespace-nowrap">One Life Graphic T-shirt</h2>
+          <div class="border-b border-primary/10 mt-3 md:mt-3.5 pb-6">
+            <div class="flex items-center space-y-3">
+              <div class="flex items-center gap-1.5">
+                <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
+                <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
+                <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
+                <img class="h-4 md:h-5" src="src/icon/star-1.png" alt="star icon">
+                <img class="h-4 md:h-5" src="src/icon/star-2.png" alt="star icon">
+              </div>
+              <p class="ml-3 text-sm">4.5/<span class="opacity-60">5</span></p>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <h4 class="text-2xl md:text-[2rem] md:leading-[100%]">$260</h4>
+              <h4 class="opacity-40 line-through text-2xl md:text-[2rem] md:leading-[100%]">$300</h4>
+              <span class="offer">-40%</span>
+            </div>
+            <p class="mt-5">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and
+              breathable fabric, it
+              offers superior comfort and style.</p>
+          </div>
+          <div class="border-b border-primary/10 py-6">
+
+            <!-- Select Color -->
+            <h6 class="tracking-normal capitalize font-normal text-primary/60">Select Colors</h6>
+            <div class="flex gap-4 mt-4">
+              <label class="relative flex items-center cursor-pointer" for="custom-icon-1">
+                <input name="framework-custom-icon" type="radio"
+                  class="peer w-9 h-9 cursor-pointer appearance-none rounded-full bg-[#4F4631] transition-all"
+                  id="custom-icon-1" checked />
+                <span
+                  class="absolute w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" fill="none" class="w-4">
+                    <path fill="#fff"
+                      d="m13.53 2.03-8 8a.751.751 0 0 1-1.062 0l-3.5-3.5a.751.751 0 1 1 1.063-1.062L5 8.438 12.47.968a.751.751 0 0 1 1.062 1.063l-.001-.001Z" />
+                  </svg>
+                </span>
+              </label>
+
+              <label class="relative flex items-center cursor-pointer" for="custom-icon-2">
+                <input name="framework-custom-icon" type="radio"
+                  class="peer w-9 h-9 cursor-pointer appearance-none rounded-full bg-[#314F4A]  transition-all"
+                  id="custom-icon-2" />
+                <span
+                  class="absolute w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" fill="none" class="w-4">
+                    <path fill="#fff"
+                      d="m13.53 2.03-8 8a.751.751 0 0 1-1.062 0l-3.5-3.5a.751.751 0 1 1 1.063-1.062L5 8.438 12.47.968a.751.751 0 0 1 1.062 1.063l-.001-.001Z" />
+                  </svg>
+                </span>
+              </label>
+
+              <label class="relative flex items-center cursor-pointer" for="custom-icon-3">
+                <input name="framework-custom-icon" type="radio"
+                  class="peer w-9 h-9 cursor-pointer appearance-none rounded-full bg-[#31344F]  transition-all"
+                  id="custom-icon-3" />
+                <span
+                  class="absolute w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" fill="none" class="w-4">
+                    <path fill="#fff"
+                      d="m13.53 2.03-8 8a.751.751 0 0 1-1.062 0l-3.5-3.5a.751.751 0 1 1 1.063-1.062L5 8.438 12.47.968a.751.751 0 0 1 1.062 1.063l-.001-.001Z" />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Choose Size -->
+          <div class="border-b border-primary/10 py-6">
+            <h6 class="tracking-normal capitalize font-normal text-primary/60">Choose Size</h6>
+
+
+            <div class="flex space-x-3 mt-4">
+              <!-- Small -->
+              <label class="cursor-pointer">
+                <input type="radio" name="size" value="small" class="peer hidden">
+                <div class="ceef-btn peer-checked:bg-primary peer-checked:text-white transition">
+                  Small
+                </div>
+              </label>
+
+              <!-- Medium -->
+              <label class="cursor-pointer">
+                <input type="radio" name="size" value="medium" class="peer hidden">
+                <div class="ceef-btn peer-checked:bg-primary peer-checked:text-white transition">
+                  Medium
+                </div>
+              </label>
+
+              <!-- Large -->
+              <label class="cursor-pointer">
+                <input type="radio" name="size" value="large" class="peer hidden" checked>
+                <div class="ceef-btn peer-checked:bg-primary peer-checked:text-white transition">
+                  Large
+                </div>
+              </label>
+
+              <!-- X-Large -->
+              <label class="cursor-pointer">
+                <input type="radio" name="size" value="x-large" class="peer hidden">
+                <div class="ceef-btn peer-checked:bg-primary peer-checked:text-white transition">
+                  X-Large
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- card btn -->
+          <div class="flex mt-6">
+            <div class="w-[28.813%]">
+              <div class="w-full flex items-center justify-between bg-forbackground-secondary px-5 py-3.5 rounded-full">
+                <button id="decrement" class="px-2 text-lg font-bold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                    <path fill="#000"
+                      d="M21.375 12a1.125 1.125 0 0 1-1.125 1.125H3.75a1.125 1.125 0 1 1 0-2.25h16.5A1.125 1.125 0 0 1 21.375 12Z" />
+                  </svg>
+                </button>
+                <span id="counter" class="text-base font-medium">1</span>
+                <button id="increment" class="px-2 text-lg font-bold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                    <path fill="#000"
+                      d="M21.375 12a1.125 1.125 0 0 1-1.125 1.125h-7.125v7.125a1.125 1.125 0 1 1-2.25 0v-7.125H3.75a1.125 1.125 0 1 1 0-2.25h7.125V3.75a1.125 1.125 0 1 1 2.25 0v7.125h7.125A1.125 1.125 0 0 1 21.375 12Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="w-[calc(100%-28.813%)] pl-3 sm:pl-[3.390%]  text-center ">
+              <button class="ceef-btn w-full min-h-full active">Add to Cart</button>
+            </div>
+          </div>
+
+
+
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Reviews section -->
-  <section class="container">
-    <div class="flex items-center justify-between">
+  <section class="container mt-20">
+    <div class="flex ">
+      <button
+        class="py-6 w-1/3 text-primary/60 text-xs sm:text-base md:text-xl border-b-2 border-primary/10 hover:border-b-2 hover:border-primary hover:text-primary hover:font-medium transition-all duration-500 ">Product
+        Details
+      </button>
+      <button
+        class="py-6 w-1/3 text-primary font-medium text-xs sm:text-base md:text-xl border-b-2 border-primary transition-all duration-500 ">Rating
+        &
+        Reviews
+      </button>
+      <button
+        class="py-6 w-1/3 text-primary/60 text-xs sm:text-base md:text-xl border-b-2 border-primary/10 hover:border-b-2 hover:border-primary hover:text-primary hover:font-medium transition-all duration-500 ">FAQs
+      </button>
+    </div>
+    <div class="flex items-center justify-between my-6">
       <div class="flex items-end gap-2">
         <h4>All Reviews</h4>
-        <span>(451)</span>
+        <span class="text-sm leading-5.5 text-primary/60">(451)</span>
       </div>
-      <div class="inline-flex items-center gap-2.5">
-        <button class="ceef-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-            <path fill="#000"
+      <div class="inline-flex items-center gap-1 sm:gap-2.5">
+        <button class="ceef-btn group p-2.5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            class="fill-primary transition-all duration-500 group-hover:fill-white">
+            <path
               d="M13.125 11.625v8.625a1.125 1.125 0 1 1-2.25 0v-8.625a1.125 1.125 0 1 1 2.25 0ZM18.75 18a1.125 1.125 0 0 0-1.125 1.125v1.125a1.125 1.125 0 1 0 2.25 0v-1.125A1.125 1.125 0 0 0 18.75 18ZM21 14.25h-1.125V3.75a1.125 1.125 0 1 0-2.25 0v10.5H16.5a1.125 1.125 0 1 0 0 2.25H21a1.125 1.125 0 1 0 0-2.25ZM5.25 15a1.125 1.125 0 0 0-1.125 1.125v4.125a1.125 1.125 0 0 0 2.25 0v-4.125A1.125 1.125 0 0 0 5.25 15Zm2.25-3.75H6.375v-7.5a1.125 1.125 0 0 0-2.25 0v7.5H3a1.125 1.125 0 1 0 0 2.25h4.5a1.125 1.125 0 1 0 0-2.25Zm6.75-4.5h-1.125v-3a1.125 1.125 0 1 0-2.25 0v3H9.75a1.125 1.125 0 0 0 0 2.25h4.5a1.125 1.125 0 0 0 0-2.25Z" />
           </svg>
         </button>
-        <button class="btn bg-forbackground-secondary flex gap-5 items-center">
+        <button class="hidden ceef-btn md:flex gap-5 items-center group">
           Latest
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none">
-            <path fill="#000"
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none"
+            class="fill-primary transition-all duration-500 group-hover:fill-white">
+            <path
               d="m11.53 1.53-5 5a.75.75 0 0 1-1.062 0l-5-5A.751.751 0 1 1 1.531.469L6 4.938l4.47-4.47a.751.751 0 0 1 1.062 1.062h-.001Z" />
           </svg>
         </button>
-        <button class="ceef-btn">Write a Review</button>
+        <button class="ceef-btn active">Write a Review</button>
       </div>
     </div>
-    <div class="grid grid-cols-2 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
       <div class=" border border-primary/10 rounded-2.5xl px-8 py-7  backdrop-blur-xs">
         <div class="flex items-center gap-1.5">
           <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
@@ -212,7 +399,7 @@
           expectations."
         </p>
       </div>
-      <div class=" border border-primary/10 rounded-2.5xl px-8 py-7  backdrop-blur-xs">
+      <div class=" border border-primary/10 rounded-2.5xl px-8 py-7 backdrop-blur-xs">
         <div class="flex items-center gap-1.5">
           <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
           <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">

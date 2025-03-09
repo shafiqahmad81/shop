@@ -24,3 +24,14 @@ var swiper = new Swiper(".mySwiper", {
         },
       },
   });
+
+  // product page counter
+
+  const counter = document.getElementById("counter");
+    document.getElementById("increment").addEventListener("click", () => {
+        counter.textContent = parseInt(counter.textContent) + 1;
+    });
+    document.getElementById("decrement").addEventListener("click", () => {
+        let value = parseInt(counter.textContent);
+        if (value > 1) counter.textContent = value - 1;
+    });
