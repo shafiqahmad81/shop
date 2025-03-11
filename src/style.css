@@ -37,7 +37,6 @@
        font-style: normal;
 }
 
-
 @import "tailwindcss";
 @import 'swiper/css';
 @import 'swiper/css/navigation';
@@ -105,6 +104,24 @@
 .dropdown:hover .dropdown-menu {
   @apply block
 }
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 
 button{
   @apply cursor-pointer

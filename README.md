@@ -1,5 +1,10 @@
-SHOP.CO project
-Installation proces:
-shop.co is a vite project
+      SHOP.CO project
+
+
+    Installation proces
+
+
 First command: pnpm install
 preview: pnpm dev
+
+Tailwind CSS has been used in this project.
