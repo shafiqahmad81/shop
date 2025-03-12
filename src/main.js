@@ -39,6 +39,28 @@ import { Navigation, } from 'swiper/modules';
     }
   });
 
+  const counter2 = document.getElementById("counter-2");
+  document.getElementById("increase-2").addEventListener("click", () => {
+    counter2.value = parseInt(counter2.value) + 1;
+  });
+
+  document.getElementById("decrease-2").addEventListener("click", () => {
+    if (parseInt(counter2.value) > 1) {
+      counter2.value = parseInt(counter2.value) - 1;
+    }
+  });
+
+  const counter3 = document.getElementById("counter-3");
+  document.getElementById("increase-3").addEventListener("click", () => {
+    counter3.value = parseInt(counter3.value) + 1;
+  });
+
+  document.getElementById("decrease-3").addEventListener("click", () => {
+    if (parseInt(counter3.value) > 1) {
+      counter3.value = parseInt(counter3.value) - 1;
+    }
+  });
+
   // Range
 
   const toggleButton = document.getElementById("toggleButton");
