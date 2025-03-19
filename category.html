@@ -34,9 +34,10 @@
 
         <nav class="hidden md:flex space-x-8">
           <li class="dropdown list-none">
-            <a class="flex items-center gap-1 text-primary hover:text-primary/80 cursor-pointer">Shop
+            <a
+              class=" flex items-center gap-1 text-primary hover:text-primary/60 cursor-pointer transition-all duration-300">Shop
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
-                <path fill="#000"
+                <path fill="currentColor"
                   d="m13.53 6.53-5 5a.751.751 0 0 1-1.062 0l-5-5a.751.751 0 1 1 1.063-1.062L8 9.938l4.47-4.47a.751.751 0 0 1 1.062 1.062h-.001Z" />
               </svg>
             </a>
@@ -62,13 +63,13 @@
             </div>
           </li>
           <li class="list-none">
-            <a href="#" class="hover:text-primary/60">On Sale</a>
+            <a href="#" class="hover:text-primary/60 transition-all duration-300">On Sale</a>
           </li>
           <li class="list-none">
-            <a href="#" class="hover:text-primary/60">New Arrivals</a>
+            <a href="#" class="hover:text-primary/60 transition-all duration-300">New Arrivals</a>
           </li>
           <li class="list-none">
-            <a href="#" class="hover:text-primary/60">Brands</a>
+            <a href="#" class="hover:text-primary/60 transition-all duration-300">Brands</a>
           </li>
         </nav>
         <!-- Search and Icons -->
@@ -103,19 +104,23 @@
                   d="M12 1.875A10.125 10.125 0 1 0 22.125 12 10.137 10.137 0 0 0 12 1.875ZM7.46 18.428a5.625 5.625 0 0 1 9.08 0 7.848 7.848 0 0 1-9.08 0Zm1.915-7.178a2.625 2.625 0 1 1 5.25 0 2.625 2.625 0 0 1-5.25 0Zm8.813 5.62a7.827 7.827 0 0 0-2.72-2.196 4.875 4.875 0 1 0-6.937 0 7.827 7.827 0 0 0-2.719 2.195 7.875 7.875 0 1 1 12.366 0h.01Z" />
               </svg>
             </button>
-            <div class="dropdown-menu absolute hidden right-0 h-auto pt-2">
-              <ul class="block w-full bg-forbackground-secondary shadow space-y-2">
+            <div class="dropdown-menu absolute hidden h-auto pt-2 right-0 w-36">
+              <ul class="block bg-forbackground-secondary shadow">
                 <li><a
-                    class="block text-primary/80 text-sm px-2 py-1 transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">dropdownitem1</a>
+                    class="block px-4 py-1.5 text-primary/80 text-sm transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">Dropdown
+                    menu item</a>
                 </li>
                 <li><a
-                    class="block text-primary/80 text-sm px-2 py-1 transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">item2</a>
+                    class="block px-4 py-1.5 text-primary/80 text-sm transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">Dropdown
+                    menu item</a>
                 </li>
                 <li><a
-                    class="block text-primary/80 text-sm px-2 py-1 transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">item3</a>
+                    class="block px-4 py-1.5 text-primary/80 text-sm transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">Dropdown
+                    menu item</a>
                 </li>
                 <li><a
-                    class="block text-primary/80 text-sm px-2 py-1 transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">item4</a>
+                    class="block px-4 py-1.5 text-primary/80 text-sm transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">Dropdown
+                    menu item</a>
                 </li>
               </ul>
             </div>
@@ -320,10 +325,10 @@
                   </div>
 
                   <!-- Range Inputs -->
-                  <input id="minRange" type="range" min="50" max="125" value="0"
-                    class="absolute left-[10%] right-1/2 h-2 bg-black appearance-none cursor-pointer top-1/2 -translate-y-1/2" />
+                  <input id="minRange" type="range" min="50" max="125" value="50"
+                    class="absolute left-0 right-1/2 h-2 bg-primary appearance-none cursor-pointer top-1/2 -translate-y-1/2" />
                   <input id="maxRange" type="range" min="125" max="200" value="200"
-                    class="absolute left-1/2 right-[10%] h-2 bg-primary  appearance-none cursor-pointer top-1/2 -translate-y-1/2" />
+                    class="absolute left-1/2 right-0 h-2 bg-primary appearance-none cursor-pointer top-1/2 -translate-y-1/2" />
                 </div>
 
                 <!-- Display Values -->
@@ -673,9 +678,8 @@
               <button class="btn active w-full ">Apply Filter</button>
             </div>
           </div>
-
-
         </div>
+        <!-- Casual -->
         <div class="w-full lg:w-[calc(100%-18.438rem)] lg:pl-5">
           <div class="flex items-center gap-5 text-primary/60 text-base">
             <h4 class="lg:grow text-primary">Casual</h4>
@@ -701,9 +705,9 @@
             class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 justify-items-center gap-x-5 gap-y-9 mt-4 pb-8 border-b border-primary/10">
             <!-- Card 1 -->
             <div class="w-full">
-              <div class="flex justify-center p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
+              <a href="#" class="flex justify-center p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
                 <img src="src/image/casual-1.png" alt="T-Shirt" class=" ">
-              </div>
+              </a>
               <div class="pt-2.5 md:pt-4 space-y-1 md:space-y-2 flex flex-col">
                 <h5 class=""><a href="product.html">T-shirt with Tape Details</a></h5>
                 <div class="flex items-center">
@@ -722,9 +726,9 @@
             </div>
             <!-- Card 2 -->
             <div class="w-full">
-              <div class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
+              <a href="#" class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
                 <img src="src/image/casual-2.png" alt="T-Shirt" class="">
-              </div>
+              </a>
               <div class="pt-2.5 md:pt-4 space-y-1 md:space-y-2 flex flex-col">
                 <h5 class=""><a href="#">Skinny Fit Jeans</a></h5>
                 <div class="flex items-center">
@@ -745,9 +749,9 @@
             </div>
             <!-- Card 3 -->
             <div class="w-full">
-              <div class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
+              <a href="#" class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
                 <img src="src/image/casual-3.png" alt="T-Shirt" class="">
-              </div>
+              </a>
               <div class="pt-2.5 md:pt-4 space-y-1 md:space-y-2 flex flex-col ">
                 <h5 class=""><a href="#">Checkered Shirt</a></h5>
                 <div class="flex items-center">
@@ -767,9 +771,9 @@
             </div>
             <!-- Card 4 -->
             <div class="w-full">
-              <div class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
+              <a href="#" class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
                 <img src="src/image/casual-4.png" alt="T-Shirt" class="max-h-[225px]">
-              </div>
+              </a>
               <div class="pt-2.5 md:pt-4 space-y-1 md:space-y-2 flex flex-col">
                 <h5 class=""><a href="#">Sleeve Striped T-shirt</a></h5>
                 <div class="flex items-center">
@@ -791,9 +795,9 @@
             </div>
             <!-- Card 4 -->
             <div class="w-full">
-              <div class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
+              <a href="#" class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
                 <img src="src/image/casual-5.png" alt="T-Shirt" class="">
-              </div>
+              </a>
               <div class="pt-2.5 md:pt-4 space-y-1 md:space-y-2 flex flex-col ">
                 <h5 class=""><a href="#">Sleeve Striped T-shirt</a></h5>
                 <div class="flex items-center">
@@ -815,9 +819,9 @@
             </div>
             <!-- Card 4 -->
             <div class="w-full">
-              <div class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
+              <a href="#" class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
                 <img src="src/image/casual-6.png" alt="T-Shirt" class="">
-              </div>
+              </a>
               <div class="pt-2.5 md:pt-4 space-y-1 md:space-y-2 flex flex-col ">
                 <h5 class=""><a href="#">Sleeve Striped T-shirt</a></h5>
                 <div class="flex items-center">
@@ -839,9 +843,9 @@
             </div>
             <!-- Card 4 -->
             <div class="w-full hidden sm:block">
-              <div class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
+              <a href="#" class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
                 <img src="src/image/casual-7.png" alt="T-Shirt" class="">
-              </div>
+              </a>
               <div class="pt-2.5 md:pt-4 space-y-1 md:space-y-2 flex flex-col">
                 <h5 class=""><a href="#">Sleeve Striped T-shirt</a></h5>
                 <div class="flex items-center">
@@ -863,9 +867,9 @@
             </div>
             <!-- Card 4 -->
             <div class="w-full hidden sm:block">
-              <div class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
+              <a href="#" class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
                 <img src="src/image/casual-8.png" alt="T-Shirt" class="">
-              </div>
+              </a>
               <div class="pt-2.5 md:pt-4 space-y-1 md:space-y-2 flex flex-col">
                 <h5 class=""><a href="#">Sleeve Striped T-shirt</a></h5>
                 <div class="flex items-center">
@@ -887,9 +891,9 @@
             </div>
             <!-- Card 4 -->
             <div class="w-full hidden sm:block">
-              <div class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
+              <a href="#" class="flex justify-center  p-2 sm:p-7 bg-forbackground-gray rounded-2.5xl">
                 <img src="src/image/casual-9.png" alt="T-Shirt" class="">
-              </div>
+              </a>
               <div class="pt-2.5 md:pt-4 space-y-1 md:space-y-2 flex flex-col ">
                 <h5 class=""><a href="#">Sleeve Striped T-shirt</a></h5>
                 <div class="flex items-center">
@@ -934,7 +938,7 @@
               </svg>
             </button>
           </div>
-          <button class="btn bg-white text-primary">Subscribe to Newsletter</button>
+          <input class="btn bg-white text-primary cursor-pointer" type="button" value="Subscribe to Newsletter">
         </div>
       </div>
     </div>

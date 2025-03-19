@@ -177,7 +177,7 @@ body{
     @apply w-7 h-7 bg-white border border-primary/20 rounded-full flex items-center justify-center hover:bg-primary
   }
   .footer-link{
-    @apply text-sm md:text-base text-primary/60 font-normal leading-5
+    @apply text-sm md:text-base text-primary/60 font-normal leading-5 transition-colors duration-300 hover:text-primary
   }
 }
 
