@@ -4,7 +4,7 @@ import { Navigation, } from 'swiper/modules';
   var swiper = new Swiper(".mySwiper", {
     modules: [Navigation],
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 32,
     pagination: {
       el: ".swiper-pagination",
         clickable: true,

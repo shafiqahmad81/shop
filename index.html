@@ -298,7 +298,7 @@
 
   <!-- top selling -->
 
-  <section class="container py-10 md:py-16">
+  <section class="container pt-10 md:pt-16 pb-10 md:pb-[51px]">
     <h2 class="mb-8 text-center">top selling</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center gap-6 mt-8 md:mt-14">
       <!-- Card 1 -->
@@ -390,7 +390,7 @@
       </div>
       <!-- Repeat for other cards -->
     </div>
-    <div class="flex justify-center mt-6">
+    <div class="flex justify-center mt-5">
       <button class="btn w-full sm:w-[218px] border border-primary/10 ">View All</button>
     </div>
   </section>
@@ -400,26 +400,37 @@
     <div
       class=" pb-7 lg:pb-20 pt-10 lg:pt-17 px-2 md:px-8 lg:px-16 bg-forbackground-secondary rounded-2.5xl lg:rounded-[40px]">
       <h2 class="text-center mb-7 sm:mb-16">BROWSE BY DRESS STYLE</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-4 sm:gap-6 ">
+      <div class="flex gap-y-4">
         <!-- Card 1 -->
-        <div class="col-span-1 rounded-2.5xl bg-white overflow-hidden relative">
-          <img class="h-[190px] lg:h-[289px] w-full" src="src/image/catagory-1.jpg" alt="catagory">
-          <h3 class="absolute top-6 left-9">Casual</h3>
+        <div class="w-[37.305%] mr-5 bg-white rounded-2.5xl overflow-hidden relative flex justify-end items-end">
+          <div class="w-[251px]">
+            <img class=" w-full" src="src/image/image-1.jpg" alt="catagory">
+          </div>
+          <h3 class="absolute top-[27px] left-9">Casual</h3>
         </div>
         <!-- Card 2 -->
-        <div class="col-span-2 rounded-2.5xl bg-white overflow-hidden relative">
-          <img class="h-[190px] lg:h-[289px] w-full" src="src/image/catagory-2.jpg" alt="catagory">
-          <h3 class="absolute top-6 left-9">Formal</h3>
+        <div class="w-[calc(100%-37.305%)] bg-white rounded-2.5xl overflow-hidden relative flex justify-end items-end">
+          <div class="w-[273px]">
+            <img class=" w-full" src="src/image/image-2.jpg" alt="catagory">
+          </div>
+          <h3 class="absolute top-[27px] left-9">Formal</h3>
         </div>
+      </div>
+      <div class="flex mt-5">
         <!-- Card 3 -->
-        <div class="col-span-2 rounded-2.5xl bg-white overflow-hidden relative">
-          <img class="h-[190px] lg:h-[289px] w-full" src="src/image/catagory-3.jpg" alt="catagory">
-          <h3 class="absolute top-6 left-9">Party</h3>
+        <div
+          class="w-[calc(100%-37.305%)] mr-5 bg-white rounded-2.5xl overflow-hidden relative flex justify-end items-end">
+          <div class="w-[321px]">
+            <img class=" w-full" src="src/image/image-3.jpg" alt="catagory">
+          </div>
+          <h3 class="absolute top-[27px] left-9">Party</h3>
         </div>
         <!-- Card 4 -->
-        <div class="col-span-1 rounded-2.5xl bg-white overflow-hidden relative">
-          <img class="h-[190px] lg:h-[289px] w-full" src="src/image/catagory-4.jpg" alt="catagory">
-          <h3 class="absolute top-6 left-9">Gym</h3>
+        <div class="w-[37.305%] bg-white rounded-2.5xl overflow-hidden relative flex justify-end items-end">
+          <div class="w-[238px]">
+            <img class=" w-full" src="src/image/image-4.jpg" alt="catagory">
+          </div>
+          <h3 class="absolute top-[27px] left-9">Gym</h3>
         </div>
         <!-- Repeat for other cards -->
       </div>
@@ -428,14 +439,14 @@
 
 
   <!-- Our Happy Customers Section -->
-  <section class="py-12 bg-white overflow-hidden">
+  <section class="pt-[104px] pb-[74px] bg-white overflow-hidden">
     <div class="container">
 
       <div class="swiper mySwiper">
-        <h2 class="text-3xl font-bold mb-8">OUR HAPPY CUSTOMERS</h2>
+        <h2 class="font-bold mb-[42px]">OUR HAPPY CUSTOMERS</h2>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7  backdrop-blur-xs">
+            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7 h-[240px] backdrop-blur-xs">
               <div class="flex items-center gap-1.5">
                 <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
                 <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
@@ -465,19 +476,61 @@
                 <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
               </div>
               <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
+                <h5 class="text-xl font-bold">Alex K.</h5>
                 <div class="w-6 h-6 p-0.5">
                   <img src="src/icon/vector.png" alt="vactor">
                 </div>
               </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
+              <p class="mt-3">"Finding clothes that align with my personal style used to be a challenge until I
+                discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes
+                and occasions.”
               </p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
+              <div class="flex items-center gap-1.5">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+              </div>
+              <div class="flex items-center gap-1 mt-3.5">
+                <h5 class="text-xl font-bold">James L.</h5>
+                <div class="w-6 h-6 p-0.5">
+                  <img src="src/icon/vector.png" alt="vactor">
+                </div>
+              </div>
+              <p class="mt-3">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
+                stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+                trends.”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
+              <div class="flex items-center gap-1.5">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
+              </div>
+              <div class="flex items-center gap-1 mt-3.5">
+                <h5 class="text-xl font-bold">Mooen</h5>
+                <div class="w-6 h-6 p-0.5">
+                  <img src="src/icon/vector.png" alt="vactor">
+                </div>
+              </div>
+              <p class="mt-3">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
+                stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+                trends.”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7 h-[240px] backdrop-blur-xs ">
               <div class="flex items-center gap-1.5">
                 <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
                 <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
@@ -507,14 +560,14 @@
                 <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
               </div>
               <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
+                <h5 class="text-xl font-bold">Alex K.</h5>
                 <div class="w-6 h-6 p-0.5">
                   <img src="src/icon/vector.png" alt="vactor">
                 </div>
               </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
+              <p class="mt-3">"Finding clothes that align with my personal style used to be a challenge until I
+                discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes
+                and occasions.”
               </p>
             </div>
           </div>
@@ -528,14 +581,14 @@
                 <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
               </div>
               <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
+                <h5 class="text-xl font-bold">James L.</h5>
                 <div class="w-6 h-6 p-0.5">
                   <img src="src/icon/vector.png" alt="vactor">
                 </div>
               </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
+              <p class="mt-3">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
+                stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+                trends.”
               </p>
             </div>
           </div>
@@ -549,56 +602,14 @@
                 <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
               </div>
               <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
+                <h5 class="text-xl font-bold">Mooen</h5>
                 <div class="w-6 h-6 p-0.5">
                   <img src="src/icon/vector.png" alt="vactor">
                 </div>
               </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class=" border border-primary/10 rounded-2.5xl px-8 py-7">
-              <div class="flex items-center gap-1.5">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-                <img class="h-4 sm:h-5.5" src="src/icon/star-1.png" alt="star">
-              </div>
-              <div class="flex items-center gap-1 mt-3.5">
-                <h5 class="text-xl font-bold">Sarah M.</h5>
-                <div class="w-6 h-6 p-0.5">
-                  <img src="src/icon/vector.png" alt="vactor">
-                </div>
-              </div>
-              <p class="mt-3">"I'm blown away by the quality and style of the clothes I received
-                from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my
-                expectations."
+              <p class="mt-3">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
+                stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+                trends.”
               </p>
             </div>
           </div>
