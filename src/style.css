@@ -159,7 +159,7 @@ body{
 
 @layer components{
   .btn{
-    @apply px-5 py-3 rounded-full text-base leading-5.5 font-medium  hover:bg-primary hover:text-white transition-all duration-500
+    @apply px-5 py-[15px] rounded-full text-base leading-5.5 font-medium  hover:bg-primary hover:text-white transition-all duration-500
   }  
   .ceef-btn{
     @apply bg-forbackground-secondary text-xs md:text-base px-4 sm:px-6 py-3 rounded-full text-primary/60 transition-all duration-500 hover:bg-primary hover:text-white
