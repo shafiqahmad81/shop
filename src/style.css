@@ -138,7 +138,7 @@ body{
     @apply text-4xl md:text-5xl xl:text-[4rem] leading-9 md:leading-16 font-Integral 
   }
   h2{
-    @apply text-3.2xl md:text-5xl font-Integral leading-9 md:leading-14
+    @apply text-3.2xl lg:text-5xl font-Integral leading-9 md:leading-14
   } 
   h3{
     @apply text-2xl md:text-4xl font-bold md:leading-12
@@ -179,7 +179,7 @@ body{
     @apply w-7 h-7 bg-white border border-primary/20 rounded-full flex items-center justify-center hover:bg-primary
   }
   .footer-link{
-    @apply text-sm md:text-base text-primary/60 font-normal leading-5 transition-colors duration-300 hover:text-primary
+    @apply text-sm md:text-base text-primary/60 font-normal leading-[26px] transition-colors duration-300 hover:text-primary
   }
 }
 
