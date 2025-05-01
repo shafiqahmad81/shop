@@ -730,6 +730,21 @@
     </div>
   </footer>
   <script type="module" src="src/main.js"></script>
+  <script>
+
+    // product page counter
+
+    const counter = document.getElementById("counter");
+    document.getElementById("increase").addEventListener("click", () => {
+      counter.value = parseInt(counter.value) + 1;
+    });
+
+    document.getElementById("decrease").addEventListener("click", () => {
+      if (parseInt(counter.value) > 1) {
+        counter.value = parseInt(counter.value) - 1;
+      }
+    });
+  </script>
 </body>
 
 </html>

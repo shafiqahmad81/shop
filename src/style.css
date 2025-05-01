@@ -107,21 +107,35 @@
   @apply block
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type=range] {
+  -webkit-appearance: none;
   appearance: none;
-  width: 24px;
-  height: 24px;
-  background-color: black;
-  border-radius: 50%;
-  cursor: pointer;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  pointer-events: none;
 }
 
-input[type="range"]::-moz-range-thumb {
-  width: 40px;
-  height: 40px;
-  background-color: black;
-  border-radius: 50%;
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 9999px;
+  background: black;
   cursor: pointer;
+  pointer-events: all;
+  position: relative;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 9999px;
+  background: black;
+  cursor: pointer;
+  pointer-events: all;
+  position: relative;
 }
 
 
@@ -164,7 +178,7 @@ body{
     @apply px-5 py-[15px] rounded-full text-base leading-5.5 font-medium  hover:bg-primary hover:text-white transition-all duration-500
   }  
   .ceef-btn{
-    @apply bg-forbackground-secondary text-xs md:text-base px-4 sm:px-6 py-3 rounded-full text-primary/60 transition-all duration-500 hover:bg-primary hover:text-white
+    @apply bg-forbackground-secondary text-xs md:text-base px-4 sm:px-6 py-3 rounded-full text-primary/60 leading-[19px] transition-all duration-500 hover:bg-primary hover:text-white
   } 
   .active{
     @apply bg-primary text-white border-2 hover:border-green-700 hover:shadow-amber-600
