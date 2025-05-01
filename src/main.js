@@ -27,6 +27,23 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+const hamburgerIcon = document.getElementById('hamburger');
+const menuNav = document.getElementById('menu')
+
+hamburgerIcon.addEventListener('click', () => {
+  menuNav.classList.toggle('hidden')
+})
+
+
+const asideMenu = document.getElementById("asidemenu");
+const asideBtn = document.getElementById('asidebtn');
+
+asideBtn.addEventListener('click', () => {
+  asideMenu.classList.toggle('hidden')
+  asideMenu.classList.add('absolute')
+})
+
+
  
   // Range
 

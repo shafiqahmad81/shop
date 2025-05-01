@@ -22,11 +22,11 @@
   </section>
 
   <!-- Header Section -->
-  <header>
-    <div class="container py-6">
+  <header class="sticky top-0 bg-white z-50">
+    <div class="container pt-6 pb-[22px]">
       <div class="flex justify-between items-center gap-4 lg:gap-10">
         <!-- Logo -->
-        <a href="#" class=" w-6 md:hidden">
+        <a id="hamburger" href="#" class=" w-6 md:hidden">
           <img src="src/icon/hambarger-icon.png" alt="menu icon">
         </a>
         <a href="index.html" class="text-2xl md:text-3.2xl md:leading-10 font-Integral -mt-3">SHOP.CO</a>
@@ -72,6 +72,52 @@
             <a href="#" class="hover:text-primary/60 transition-all duration-300">Brands</a>
           </li>
         </nav>
+
+        <!-- mobile menu -->
+
+        <div id="menu" class=" hidden w-screen h-screen absolute bg-forbackground-primary top-14 left-0">
+          <nav class="container flex flex-col gap-6 pt-4">
+            <li class="dropdown list-none">
+              <a
+                class=" flex items-center gap-1.5 text-primary hover:text-primary/60 cursor-pointer transition-all duration-300">Shop
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+                  <path fill="currentColor"
+                    d="m13.53 6.53-5 5a.751.751 0 0 1-1.062 0l-5-5a.751.751 0 1 1 1.063-1.062L8 9.938l4.47-4.47a.751.751 0 0 1 1.062 1.062h-.001Z" />
+                </svg>
+              </a>
+              <div class="dropdown-menu absolute hidden h-auto pt-2">
+                <ul class="block w-full bg-forbackground-secondary shadow">
+                  <li><a
+                      class="block px-4 py-1.5 text-primary/80 text-sm transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">Dropdown
+                      menu item</a>
+                  </li>
+                  <li><a
+                      class="block px-4 py-1.5 text-primary/80 text-sm transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">Dropdown
+                      menu item</a>
+                  </li>
+                  <li><a
+                      class="block px-4 py-1.5 text-primary/80 text-sm transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">Dropdown
+                      menu item</a>
+                  </li>
+                  <li><a
+                      class="block px-4 py-1.5 text-primary/80 text-sm transition-all duration-500 hover:bg-primary hover:text-white cursor-pointer">Dropdown
+                      menu item</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-none">
+              <a href="#" class="hover:text-primary/60 transition-all duration-300">On Sale</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="hover:text-primary/60 transition-all duration-300">New Arrivals</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="hover:text-primary/60 transition-all duration-300">Brands</a>
+            </li>
+          </nav>
+        </div>
+
         <!-- Search and Icons -->
         <div class="relative text-primary/60 grow">
           <input type="search" placeholder="Search for products..."
@@ -152,8 +198,9 @@
       <div class="flex mt-6">
 
         <!-- aside section -->
-        <aside class="hidden lg:block w-[18.438rem] ">
-          <div class="border border-primary/10 rounded-2.5xl space-y-[19px] px-6 pt-[17px]">
+        <aside id="asidemenu"
+          class="hidden top-[259px] lg:block w-[18.438rem] bg-white border border-primary/10 rounded-2.5xl z-40 overflow-hidden">
+          <div class=" space-y-[19px] px-6 pt-[17px] ">
             <div class="flex items-center justify-between border-b border-primary/10 pb-6">
               <h5>Filters</h5>
               <button class="">
@@ -703,9 +750,9 @@
         </aside>
         <!-- Casual -->
         <div class="w-full lg:w-[calc(100%-18.438rem)] lg:pl-5 mt-[5px]">
-          <div class="flex items-center text-primary/60 text-base">
+          <div class="flex items-center text-primary/60 text-base gap-2">
             <h4 class="lg:grow text-[32px] text-primary">Casual</h4>
-            <div class="flex mt-2">
+            <div class="flex mt-2 grow lg:grow-0">
               <p class="grow lg:grow-0">Showing 1-10 of 100 Products</p>
               <div class="ml-3 lg:flex items-center hidden ">
                 <span class="mr-1">Sort by:</span>
@@ -717,7 +764,7 @@
                 </button>
               </div>
             </div>
-            <button class=" bg-primary/10 rounded-full p-2.5 lg:hidden">
+            <button id="asidebtn" class=" bg-primary/10 rounded-full p-2.5 lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                 class="fill-primary/40 transition-all duration-500">
                 <path
@@ -933,10 +980,10 @@
           </div>
 
           <!-- next page -->
-          <div class="flex justify-between w-full py-5 pr-1.5">
+          <div class="flex justify-between gap-2 py-5 pr-1.5 ">
             <!-- Previous Button -->
             <button
-              class="flex items-center px-3.5 py-2 border border-primary/10 rounded-lg gap-3 text-sm font-medium text-primary hover:bg-primary/10">
+              class="flex items-center px-2 sm:px-3.5 py-2 border border-primary/10 rounded-lg gap-2 sm:gap-3 text-sm font-medium text-primary hover:bg-primary/10">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
                 <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67"
                   d="M12.833 7H1.167m0 0L7 12.833M1.167 7 7 1.167" />
@@ -945,25 +992,25 @@
             </button>
 
             <!-- Pagination Numbers -->
-            <div class="flex items-center gap-1">
+            <div class="flex items-center">
               <a href="#"
-                class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/5 text-sm font-medium text-primary">1</a>
+                class="w-9 sm:w-10 h-9 sm:h-10 flex items-center justify-center rounded-lg bg-primary/5 text-sm font-medium text-primary">1</a>
               <a href="#"
-                class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">2</a>
+                class="w-9 sm:w-10 h-9 sm:h-10 flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">2</a>
               <a href="#"
-                class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">3</a>
+                class="hidden w-10 h-10 sm:flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">3</a>
               <span href="#" class="px-2 text-gray-500">...</span>
               <a href="#"
-                class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">8</a>
+                class="hidden w-10 h-10 sm:flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">8</a>
               <a href="#"
-                class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">9</a>
+                class="w-9 sm:w-10 h-9 sm:h-10 flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">9</a>
               <a href="#"
-                class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">10</a>
+                class="w-9 sm:w-10 h-9 sm:h-10 flex items-center justify-center rounded-lg bg-primary/0 hover:bg-primary/5 transition-all duration-500 text-sm font-medium text-primary">10</a>
             </div>
 
             <!-- Next Button -->
             <button
-              class="flex items-center px-3.5 py-2 border border-primary/10 rounded-lg gap-3 text-sm font-medium text-primary hover:bg-primary/10">
+              class="flex items-center px-2 sm:px-3.5 py-2 border border-primary/10 rounded-lg gap-2 sm:gap-3 text-sm font-medium text-primary hover:bg-primary/10">
               Next
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
                 <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67"
